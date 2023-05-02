@@ -1,19 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&family=Kantumruy+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;700&display=swap");
+
 :root {
   //font-size
-  --fs-80: 80px;
-  --fs-44: 44px;
-  --fs-38: 38px;
-  --fs-30: 30px;
-  --fs-24: 24px;
+  --fs-60: 60px;
+  --fs-40: 40px;
+  --fs-35: 35px;
+  --fs-25: 25px;
   --fs-20: 20px;
-  --fs-18: 18px;
   --fs-16: 16px;
-  --fs-12: 12px;
-  --fs-10: 10px;
 
   //character spacing
-  --cs--0-2: -1.2px;
-  --cs--0-3: -1.3px;
+  --cs--1-2: -1.2px;
+  --cs--1-3: -1.3px;
   --cs--0-8: -0.8px;
   --cs--0-12: -0.12px;
   --cs--0-16: -0.16px;
@@ -24,19 +22,7 @@
   --cs--2: 2px;
   --cs--2-4: 2.4px;
 
-  //line spacing
-  --ls-84: 84;
-  --ls-52: 52;
-  --ls-48: 48;
-  --ls-36: 36;
-  --ls-30: 30;
-  --ls-28: 28;
-  --ls-24: 24;
-  --ls-20: 20;
-  --ls-18: 18;
-  --ls-16: 16;
-  --ls-14: 14;
-
   //font family
-  --ff-body: Arial, Helvetica, sans-serif;
+  --ff-heading: "Kanit", sans-serif;
+  --ff-para: "Kantumruy Pro", sans-serif;
 }
