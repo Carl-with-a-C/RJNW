@@ -1,116 +1,102 @@
-/* ----------- */
-/* -- FONTS --*/
-/* --------- -*/
-
 //MOBILE & TABLET
 
 h1 {
-  font-size: var(--fs-30);
-  font-weight: bold;
-  font-family: var(--ff-body);
-  letter-spacing: var(--cs--0-3);
+  font-size: var(--fs-40);
+  font-weight: 900;
+  font-family: var(--ff-heading);
   line-height: 1.2;
 }
+
 h2 {
-  font-size: var(--fs-24);
-  font-weight: bold;
-  font-family: var(--ff-body);
-  letter-spacing: var(--cs--0-24);
+  font-size: var(--fs-35);
+  font-weight: 900;
+  font-family: var(--ff-heading);
   line-height: 1;
 }
+
 h3 {
-  font-size: var(--fs-18);
-  font-weight: bold;
-  font-family: var(--ff-body);
-  letter-spacing: var(--cs--0-18);
+  font-size: var(--fs-25);
+  font-weight: 900;
+  font-family: var(--ff-heading);
   line-height: 1;
 }
+
 h4 {
   font-size: var(--fs-16);
   font-weight: bold;
-  font-family: Arial, sans-serif;
-  letter-spacing: var(--cs--0-2);
+  font-family: var(--ff-para);
   line-height: 1;
+  text-transform: uppercase;
 }
 
 p {
-  font-size: var(--fs-12);
-  font-weight: light;
-  font-family: var(--ff-body);
-  letter-spacing: var(--cs--0-12);
+  font-size: var(--fs-16);
+  font-family: var(--ff-para);
   line-height: 1.5;
 }
 
-.sub-heading {
-  font-size: var(--fs-12);
+.cta {
+  font-size: var(--fs-25);
   font-weight: bold;
-  font-family: var(--ff-body);
-  text-transform: uppercase;
-  letter-spacing: var(--cs--2-4);
+  font-family: var(--ff-para);
   line-height: 1;
 }
 
-.cta {
+.sub-heading {
   font-size: var(--fs-16);
-  font-weight: bold;
-  font-family: var(--ff-body);
-  letter-spacing: var(--cs--0-16);
+  font-style: italic;
+  font-family: var(--ff-para);
   line-height: 1;
 }
 
 //DESKTOP
 @media (min-width: $layout-breakpoint-desktop) {
   h1 {
-    font-size: var(--fs-44);
-    font-weight: bold;
-    font-family: var(--ff-body);
-    letter-spacing: var(--cs--0-44);
+    font-size: var(--fs-60);
+    font-weight: 900;
+    font-family: var(--ff-heading);
     line-height: 1.2;
   }
+
   h2 {
-    font-size: var(--fs-38);
-    font-weight: bold;
-    font-family: var(--ff-body);
-    letter-spacing: var(--cs--0-38);
+    font-size: var(--fs-40);
+    font-weight: 900;
+    font-family: var(--ff-heading);
     line-height: 1;
   }
+
   h3 {
-    font-size: var(--fs-24);
-    font-weight: bold;
-    font-family: var(--ff-body);
-    letter-spacing: var(--cs--0-24);
+    font-size: var(--fs-35);
+    font-weight: 900;
+    font-family: var(--ff-heading);
     line-height: 1;
   }
+
   h4 {
-    font-size: var(--fs-16);
+    font-size: var(--fs-20);
     font-weight: bold;
-    font-family: Arial, sans-serif;
-    letter-spacing: var(--cs--0-2);
+    font-family: var(--ff-para);
     line-height: 1;
+    text-transform: uppercase;
   }
 
   p {
-    font-size: var(--fs-16);
-    font-weight: light;
-    font-family: var(--ff-body);
-    letter-spacing: var(--cs--0-16);
+    font-size: var(--fs-20);
+    font-family: var(--ff-para);
     line-height: 1.5;
   }
 
-  .sub-heading {
-    font-size: var(--fs-10);
+  .cta {
+    font-size: var(--fs-30);
     font-weight: bold;
-    font-family: var(--ff-body);
-    text-transform: uppercase;
-    letter-spacing: var(--cs--2);
+    font-family: var(--ff-para);
     line-height: 1;
   }
 
-  .cta {
-    font-size: var(--fs-12);
-    font-weight: bold;
-    font-family: var(--ff-body);
-    letter-spacing: var(--cs--0-12);
+  .sub-heading {
+    font-size: var(--fs-20);
+    font-style: italic;
+    font-family: var(--ff-para);
     line-height: 1;
   }
 }
