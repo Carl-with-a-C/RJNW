@@ -49,6 +49,16 @@ p {
   line-height: 1;
 }
 
+.nav-link-text {
+  font-family: var(--ff-para);
+  font-size: var(--fs-16);
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
 //DESKTOP
 @media (min-width: $layout-breakpoint-desktop) {
   h1 {
@@ -98,5 +108,15 @@ p {
     font-style: italic;
     font-family: var(--ff-para);
     line-height: 1;
+  }
+
+  .nav-link-text {
+    font-family: var(--ff-para);
+    font-size: var(--fs-18);
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
 }
