@@ -3,7 +3,6 @@
   border-bottom: 1px solid $black;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2em;
   height: 5em;
   position: relative;
 }
@@ -17,6 +16,7 @@
 .nav-logo {
   align-self: center;
   margin: 0;
+  padding-left: 1em;
 }
 
 .nav-link-section {
@@ -25,7 +25,6 @@
   display: grid;
   align-content: center;
   min-height: 100%;
-  padding: 0 2em;
 }
 
 .nav-links {
@@ -70,9 +69,6 @@
   }
   .nav-link-section {
     border: none;
-  }
-  .nav-links {
-    justify-content: space-between;
   }
 }
 

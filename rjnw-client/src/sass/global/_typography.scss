@@ -4,7 +4,7 @@ h1 {
   font-size: var(--fs-40);
   font-weight: 900;
   font-family: var(--ff-heading);
-  line-height: 1.2;
+  line-height: 0.8;
 }
 
 h2 {
@@ -37,8 +37,8 @@ p {
 
 .cta {
   font-size: var(--fs-25);
-  font-weight: bold;
   font-family: var(--ff-para);
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -65,7 +65,7 @@ p {
     font-size: var(--fs-60);
     font-weight: 900;
     font-family: var(--ff-heading);
-    line-height: 1.2;
+    line-height: 0.8;
   }
 
   h2 {
@@ -98,8 +98,8 @@ p {
 
   .cta {
     font-size: var(--fs-30);
-    font-weight: bold;
     font-family: var(--ff-para);
+    font-weight: bold;
     line-height: 1;
   }
 
