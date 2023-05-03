@@ -3,6 +3,8 @@ import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Services from "./components/Services";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Landing />
       <About />
       <Projects />
+      <Services />
+      <Contacts />
     </div>
   );
 }
