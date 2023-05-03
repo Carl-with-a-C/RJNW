@@ -69,7 +69,7 @@
   img {
     max-width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     transform: translateY(-25%);
     @media (max-width: 1250px) {
       transform: none;

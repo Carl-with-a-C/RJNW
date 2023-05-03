@@ -37,8 +37,8 @@ const Landing = () => {
             </div>
           </div>
           <div className="splash-cta-container">
-            <h4>find out more about us {">"}</h4>
-            <button className="get-quote-btn cta">Get a quote</button>
+            <h4>find out more {">"}</h4>
+            <button className="get-quote-btn cta">CONTACT US</button>
           </div>
         </div>
       </main>
