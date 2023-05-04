@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <div>
+    <div id="contact">
       <section className="contacts-main">
         <div className="contacts-splash-section">
           <div className="contacts-img-container">
@@ -20,6 +20,10 @@ const Contacts = () => {
           </div>
         </div>
       </section>
+      <div className="services-spacer-container">
+        <div className="services-spacer-left"></div>
+        <div className="services-spacer-right"></div>
+      </div>
     </div>
   );
 };

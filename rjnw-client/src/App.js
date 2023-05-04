@@ -1,20 +1,16 @@
 import "./sass/main.scss";
-import Nav from "./components/Nav";
-import Landing from "./components/Landing";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import Contacts from "./components/Contacts";
+import Home from "./components/Home";
+import Facia from "./components/Facia";
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Landing />
-      <About />
-      <Projects />
-      <Services />
-      <Contacts />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="facias" element={<Facia />} />
+      </Routes>
     </div>
   );
 }

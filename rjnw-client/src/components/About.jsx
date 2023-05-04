@@ -54,7 +54,7 @@ const About = () => {
           </div>
         </div>
       </main>
-      <div className="about-spacer-container">
+      <div id="projects" className="about-spacer-container">
         <div className="about-spacer-left"></div>
         <div className="about-spacer-right"></div>
       </div>

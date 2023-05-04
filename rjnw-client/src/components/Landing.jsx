@@ -2,7 +2,7 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div>
+    <div id="home">
       <main className="landing-main">
         <div className="landing-header-section">
           <div className="upper-header-container">
@@ -38,11 +38,13 @@ const Landing = () => {
           </div>
           <div className="splash-cta-container">
             <h4>find out more {">"}</h4>
-            <button className="get-quote-btn cta">CONTACT US</button>
+            <a href="#contact">
+              <button className="get-quote-btn cta">CONTACT US</button>
+            </a>
           </div>
         </div>
       </main>
-      <div className="spacer-container">
+      <div id="about" className="spacer-container">
         <div className="spacer-left"></div>
         <div className="spacer-right"></div>
       </div>

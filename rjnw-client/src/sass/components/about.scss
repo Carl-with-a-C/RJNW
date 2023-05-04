@@ -17,6 +17,7 @@
 
 .about-lower-section {
   flex: 1.5;
+  position: relative;
 }
 
 .about-heading-section,
@@ -58,9 +59,12 @@
   flex: 3;
   padding: 2em;
   border-right: solid 1px $black;
+  position: relative;
+  width: 100%;
 }
 
 .about-main-img-container {
+  width: 100%;
   height: 475px;
   overflow: hidden;
   img {
@@ -79,12 +83,13 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  position: relative;
+  padding: 2em;
 }
 
 .about-side-img-section {
   flex: 2;
-  border-bottom: solid 1px $black;
-  padding: 2em;
+  position: relative;
 }
 
 .about-side-img-container {
@@ -106,6 +111,9 @@
 .about-side-space-section {
   flex: 1;
   background-color: $fade-blue;
+
+  margin: 2em -2em -2em -2em;
+  border-top: solid 1px $black;
 }
 
 .about-spacer-container {
@@ -122,6 +130,7 @@
 }
 .about-spacer-right {
   flex: 1;
+  padding: 2em;
 }
 
 @media (max-width: 800px) {

@@ -1,0 +1,41 @@
+.service-navbar {
+  display: flex;
+  border-bottom: 1px solid $black;
+  align-items: center;
+  justify-content: space-between;
+  height: 5em;
+  position: relative;
+}
+
+.service-nav-logo-section {
+  display: flex;
+  flex: 3;
+  height: 100%;
+  border-right: solid 1px $black;
+  padding: 2em;
+}
+.service-nav-logo {
+  align-self: center;
+  margin: 0;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.service-nav-socials-section {
+  flex: 1;
+  height: auto;
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .service-nav-logo-section {
+    border: none;
+  }
+}

@@ -5,22 +5,29 @@
   justify-content: space-between;
   height: 5em;
   position: relative;
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 1000;
 }
 
 .nav-logo-section {
   display: flex;
-  flex-basis: calc(100% / 2);
+  flex: 1;
   height: 100%;
-  border-right: solid 1px $black;
 }
 .nav-logo {
   align-self: center;
   margin: 0;
   padding-left: 1em;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .nav-link-section {
-  flex-basis: calc(100% / 1);
+  flex: 2;
   border-right: $black 1px solid;
   display: grid;
   align-content: center;
@@ -30,11 +37,14 @@
 .nav-links {
   display: flex;
   justify-content: space-around;
+  padding: 0 2em;
 }
 
 .nav-socials-section {
-  flex-basis: calc(100% / 2);
+  flex: 1;
   height: auto;
+  padding: 0 1.3em;
+
   ul {
     display: flex;
     justify-content: center;
