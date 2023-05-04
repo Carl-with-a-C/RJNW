@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <main className="projects-main">
         <div className="projects-splash-container">
           <div className="projects-splash-img-container">
@@ -27,7 +27,7 @@ const Projects = () => {
           </div>
         </div>
       </main>
-      <div className="projects-spacer-container">
+      <div id="services" className="projects-spacer-container">
         <div className="projects-spacer-left"></div>
         <div className="projects-spacer-right"></div>
       </div>

@@ -1,8 +1,8 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div>
+    <div id="services">
       <section className="services-main">
         <div className="services-sideinfo-container">
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
@@ -15,13 +15,15 @@ const Services = () => {
         <div className="services-services-container">
           <div className="services-upper-container">
             <div className="service upper-left-service">
-              <div className="upper-left-img-container">
-                <img
-                  src="https://fascias.com/image/cache/wp/lj/fascias-and-soffits/grey-fascia-board.webp"
-                  alt="roof facia"
-                />
-                <h2 className="service-img-text">Facia & Soffits</h2>
-              </div>
+              <Link to="/facias">
+                <div className="upper-left-img-container">
+                  <img
+                    src="https://fascias.com/image/cache/wp/lj/fascias-and-soffits/grey-fascia-board.webp"
+                    alt="roof facia"
+                  />
+                  <h2 className="service-img-text">Facia & Soffits</h2>
+                </div>
+              </Link>
             </div>
             <div className="service upper-right-service">
               <div className="upper-right-img-container">

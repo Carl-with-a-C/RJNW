@@ -6,24 +6,26 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo-section">
-        <h3 className="nav-logo">LOGO</h3>
+        <h3 className="nav-logo">
+          <a href="#">LOGO</a>
+        </h3>
       </div>
       <div className="nav-link-section">
         <ul className="nav-links">
           <li className="nav-link-text">
-            <a href="#">about</a>
+            <a href="#">home</a>
           </li>
           <li className="nav-link-text">
-            <a href="#">contact</a>
+            <a href="#about">about</a>
           </li>
           <li className="nav-link-text">
-            <a href="#">roofing</a>
+            <a href="#projects">projects</a>
           </li>
           <li className="nav-link-text">
-            <a href="#">joinery</a>
+            <a href="#services">services</a>
           </li>
           <li className="nav-link-text">
-            <a href="#">conversion</a>
+            <a href="#contact">contact</a>
           </li>
         </ul>
       </div>
