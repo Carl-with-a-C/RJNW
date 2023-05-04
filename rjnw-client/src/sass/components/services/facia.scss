@@ -21,7 +21,7 @@
   flex: 4;
   border-bottom: solid 1px $black;
   position: relative;
-  height: 100%;
+  min-height: 100%;
 }
 
 .facia-header-section {
@@ -97,5 +97,6 @@
   }
   .facia-lower-section {
     flex-direction: column;
+    border: none;
   }
 }
