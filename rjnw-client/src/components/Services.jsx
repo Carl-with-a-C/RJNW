@@ -26,24 +26,28 @@ const Services = () => {
               </Link>
             </div>
             <div className="service upper-right-service">
-              <div className="upper-right-img-container">
-                <img
-                  src="https://images.pexels.com/photos/1453799/pexels-photo-1453799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="old roof"
-                />
-                <h2 className="service-img-text">Re-roof</h2>
-              </div>
+              <Link to="/re-roof">
+                <div className="upper-right-img-container">
+                  <img
+                    src="https://images.pexels.com/photos/1453799/pexels-photo-1453799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="old roof"
+                  />
+                  <h2 className="service-img-text">Re-roof</h2>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="services-lower-container">
             <div className="service lower-left-service">
-              <div className="lower-left-img-container">
-                <img
-                  src="https://cdn.mos.cms.futurecdn.net/ciamELhqGyCeeM8Fkd54KA-1920-80.jpg.webp"
-                  alt="loft conversion pictured from outside"
-                />
-                <h2 className="service-img-text">Dorma Conversions</h2>
-              </div>
+              <Link to="/conversions">
+                <div className="lower-left-img-container">
+                  <img
+                    src="https://cdn.mos.cms.futurecdn.net/ciamELhqGyCeeM8Fkd54KA-1920-80.jpg.webp"
+                    alt="loft conversion pictured from outside"
+                  />
+                  <h2 className="service-img-text">Dorma Conversions</h2>
+                </div>
+              </Link>
             </div>
             <div className="service lower-right-service"></div>
           </div>
