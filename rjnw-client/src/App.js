@@ -1,3 +1,4 @@
+import "swiper/css/bundle";
 import "./sass/main.scss";
 import Home from "./components/Home";
 import Facia from "./components/Facia";

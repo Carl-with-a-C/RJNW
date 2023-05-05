@@ -12,7 +12,9 @@ const Facia = () => {
               <h1>FACIA AND SOFFITS</h1>
             </div>
           </div>
-          <div className="facia-upper-space"></div>
+          <div className="facia-upper-space">
+            <button className="service-btn cta">GET A QUOTE</button>
+          </div>
         </div>
         <div className="facia-lower-section">
           <div className="facia-carousel-section">
@@ -25,9 +27,7 @@ const Facia = () => {
           </div>
           <div className="facia-info-section">
             <div className="facia-info-upper-section">
-              <h3>
-                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
-              </h3>
+              <h3>Lorem ipsum dolor sit amet, consect</h3>
               <button className="service-btn cta">GET A QUOTE</button>
             </div>
             <div className="facia-info-lower-section">
@@ -38,11 +38,7 @@ const Facia = () => {
                 </p>
               </div>
               <div className="facia-info-bottom">
-                <p>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor
-                  sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing
-                </p>
+                <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>

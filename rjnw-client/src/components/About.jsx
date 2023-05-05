@@ -7,9 +7,7 @@ const About = () => {
         <div className="about-upper-section">
           <div className="about-heading-section">
             <div className="about-heading">
-              <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              </h2>
+              <h2>Lorem ipsum dolor sit amet, consectetur</h2>
             </div>
             <div className="about-heading-space"></div>
           </div>
@@ -18,16 +16,13 @@ const About = () => {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Aenean vel elit scelerisque mauris pellentesque pulvinar
-                pellentesque. Nulla posuere sollicitudin aliquam ultrices. Sed
-                velit dignissim sodales ut eu.
               </p>
             </div>
             <div className="about-blurb about-blurb-2">
               <p>
                 Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut.
               </p>
             </div>
           </div>

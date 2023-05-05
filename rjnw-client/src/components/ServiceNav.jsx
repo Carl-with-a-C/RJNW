@@ -12,6 +12,22 @@ const ServiceNav = () => {
           <Link to="/">LOGO</Link>
         </h3>
       </div>
+      <div className="service-nav-link-section">
+        <ul className="service-nav-links">
+          <li className="services-nav-link-text">
+            <Link to="/">home</Link>
+          </li>
+          <li className="services-nav-link-text">
+            <Link to="/facias">facias</Link>
+          </li>
+          <li className="services-nav-link-text">
+            <Link to="/re-roof">re-roof</Link>
+          </li>
+          <li className="services-nav-link-text">
+            <Link to="/conversions">conversions</Link>
+          </li>
+        </ul>
+      </div>
       <div className="service-nav-socials-section">
         <ul className="service-nav-socials">
           <li>

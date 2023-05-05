@@ -1,10 +1,10 @@
-.facia-main {
+.conversion-main {
   display: flex;
   height: 83vh;
   flex-direction: column;
 }
 
-.facia-upper-section {
+.conversion-upper-section {
   display: flex;
   flex: 1;
   border-bottom: solid 1px $black;
@@ -12,11 +12,11 @@
   max-height: 16.6vh;
 }
 
-.facia-upper-space {
+.conversion-upper-space {
   background-color: $fade-blue;
 }
 
-.facia-lower-section {
+.conversion-lower-section {
   display: flex;
   flex: 4;
   border-bottom: solid 1px $black;
@@ -24,7 +24,7 @@
   max-height: 66.4vh;
 }
 
-.facia-header-section {
+.conversion-header-section {
   flex: 3;
   display: flex;
   border-right: solid 1px $black;
@@ -32,10 +32,10 @@
   padding: 2em;
 }
 
-.facia-header-container {
+.conversion-header-container {
   color: $blue;
 }
-.facia-upper-space {
+.conversion-upper-space {
   flex: 1;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
   }
 }
 
-.facia-carousel-section {
+.conversion-carousel-section {
   flex: 3;
   border-right: solid 1px $black;
   padding: 2em;
@@ -56,24 +56,30 @@
   height: 100%;
 }
 
-.facia-img-container {
+.conversion-img-container {
   position: relative;
   overflow: hidden;
   max-height: 100%;
   img {
-    width: 100%;
+    max-width: 120%;
     object-fit: cover;
-    max-height: 100%;
+  }
+  @media (max-width: 1250px) {
+    img {
+      object-fit: cover;
+      object-position: center;
+      max-width: 140%;
+    }
   }
 }
 
-.facia-info-section {
+.conversion-info-section {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.facia-info-upper-section {
+.conversion-info-upper-section {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -93,7 +99,7 @@
   }
 }
 
-.facia-info-lower-section {
+.conversion-info-lower-section {
   flex: 1;
   padding: 2em;
   display: flex;
@@ -103,14 +109,14 @@
 }
 
 @media (max-width: 950px) {
-  .facia-upper-space {
+  .conversion-upper-space {
     display: none;
   }
-  .facia-lower-section {
+  .conversion-lower-section {
     flex-direction: column;
     border: none;
   }
-  .facia-info-upper-section {
+  .conversion-info-upper-section {
     button {
       display: block;
     }

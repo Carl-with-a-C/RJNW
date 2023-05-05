@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   min-height: 83vh;
+  position: relative;
 }
 
 .projects-splash-container {
   flex: 4;
   border-bottom: solid 1px $black;
   padding: 2em;
+  max-height: 66.4vh;
+  overflow: hidden;
 }
 
 .projects-splash-img-container {
-  height: 700px;
+  display: flex;
+  max-height: calc(66.4vh);
+  max-width: 100%;
   overflow: hidden;
   img {
     object-fit: cover;

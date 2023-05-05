@@ -2,7 +2,11 @@ import facebook from "../icons/FB-blue.svg";
 import twitter from "../icons/TW-blue.svg";
 import insta from "../icons/INS-blue.svg";
 
+import { useState } from "react";
+
 const Nav = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-logo-section">
@@ -48,11 +52,82 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <a href="#" className="nav-toggle">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </a>
+      <div className="nav-toggle" onClick={() => setNavOpen(!navOpen)}>
+        <span className={navOpen ? "bar top-bar" : "bar"}></span>
+        <span className={navOpen ? "bar mid-bar" : "bar"}></span>
+        <span className={navOpen ? "bar bottom-bar" : "bar"}></span>
+      </div>
+
+      <div
+        className="nav-overlay"
+        style={{
+          height: navOpen ? "calc(100vh - 5em)" : "0",
+          transitionDelay: navOpen ? "0s" : "0.5s",
+        }}
+      >
+        <div
+          className="overlay-links-container"
+          style={{
+            transform: navOpen ? "scale(1)" : "scale(0)",
+            transition: "1s",
+            transitionDelay: navOpen ? "1s" : "0s",
+            opacity: navOpen ? "1" : "0",
+          }}
+        >
+          <ul className="overlay-links">
+            <li className="overlay-link">
+              <a
+                href="#"
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                }}
+              >
+                <h1>home</h1>
+              </a>
+            </li>
+            <li className="overlay-link">
+              <a
+                href="#about"
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                }}
+              >
+                <h1>about</h1>
+              </a>
+            </li>
+            <li className="overlay-link">
+              <a
+                href="#projects"
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                }}
+              >
+                <h1>projects</h1>
+              </a>
+            </li>
+            <li className="overlay-link">
+              <a
+                href="#services"
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                }}
+              >
+                <h1>services</h1>
+              </a>
+            </li>
+            <li className="overlay-link">
+              <a
+                href="#contact"
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                }}
+              >
+                <h1>contact</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };

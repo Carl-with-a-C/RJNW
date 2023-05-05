@@ -20,9 +20,9 @@ const Contacts = () => {
           </div>
         </div>
       </section>
-      <div className="services-spacer-container">
-        <div className="services-spacer-left"></div>
-        <div className="services-spacer-right"></div>
+      <div className="contacts-spacer-container">
+        <div className="contacts-spacer-left"></div>
+        <div className="contacts-spacer-right"></div>
       </div>
     </div>
   );

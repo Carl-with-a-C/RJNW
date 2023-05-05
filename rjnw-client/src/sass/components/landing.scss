@@ -1,6 +1,7 @@
 .landing-main {
   display: flex;
   border-bottom: 1px solid $black;
+  position: relative;
 }
 
 .landing-header-section,
@@ -9,6 +10,7 @@
   flex-direction: column;
   flex: 1;
   min-height: 83vh;
+  max-width: 50%;
 }
 
 .landing-header-section {
@@ -19,6 +21,7 @@
   display: flex;
   flex: 1;
   border-bottom: 1px solid $black;
+  max-height: 33.2vh;
 }
 
 .upper-header-img,
@@ -28,8 +31,7 @@
 }
 
 .upper-header-img-container {
-  max-width: 300px;
-  height: 275px;
+  height: 100%;
   overflow: hidden;
   img {
     object-fit: cover;
@@ -56,15 +58,19 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 2em;
+  max-height: 55.1vh;
 }
 
 .splash-carousel-container {
   padding: 2em;
+  max-height: 66.4vh;
+  position: relative;
 }
 
 .splash-carousel-img-container {
+  position: relative;
   max-width: 100%;
-  max-height: 650px;
+  height: 100%;
   overflow: hidden;
   img {
     max-width: 100%;
@@ -74,7 +80,12 @@
   }
   @media (max-width: 1250px) {
     img {
-      max-width: 140%;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 800px) {
+    img {
+      object-fit: cover;
     }
   }
 }
@@ -127,14 +138,27 @@
   }
   .landing-header-section {
     border-bottom: solid 1px $black;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .landing-splash-section {
+    max-width: 100%;
   }
   .spacer-container {
     display: none;
   }
+  .splash-carousel-container {
+    max-height: 50%;
+  }
   .splash-carousel-img-container {
-    max-height: 60vh;
+    max-height: 50%;
     img {
       max-width: 120%;
     }
+  }
+  .lower-header-container {
+    justify-content: flex-end;
+    gap: 2em;
   }
 }

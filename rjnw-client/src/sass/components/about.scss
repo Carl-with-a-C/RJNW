@@ -13,11 +13,13 @@
 .about-upper-section {
   flex: 1;
   border-bottom: solid 1px $black;
+  max-height: 33.2vh;
 }
 
 .about-lower-section {
   flex: 1.5;
   position: relative;
+  max-height: 55.1vh;
 }
 
 .about-heading-section,
@@ -65,7 +67,7 @@
 
 .about-main-img-container {
   width: 100%;
-  height: 475px;
+  height: 100%;
   overflow: hidden;
   img {
     width: 100%;
@@ -90,10 +92,11 @@
 .about-side-img-section {
   flex: 2;
   position: relative;
+  max-height: 22.55vh;
 }
 
 .about-side-img-container {
-  height: 320px;
+  height: 100%;
   overflow: hidden;
   img {
     width: 100%;
@@ -111,7 +114,6 @@
 .about-side-space-section {
   flex: 1;
   background-color: $fade-blue;
-
   margin: 2em -2em -2em -2em;
   border-top: solid 1px $black;
 }
@@ -136,6 +138,7 @@
 @media (max-width: 800px) {
   .about-upper-section {
     flex-direction: column;
+    max-height: 56.6vh;
   }
   .about-heading-space {
     display: none;
@@ -143,6 +146,9 @@
 
   .about-blurb-section {
     flex-direction: column;
+  }
+  .about-blurb-2 {
+    display: none;
   }
 
   .about-side-section {

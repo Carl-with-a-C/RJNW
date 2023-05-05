@@ -1,7 +1,7 @@
 .contacts-main {
   display: flex;
   border-bottom: solid 1px $black;
-  height: 83vh;
+  max-height: 83vh;
 }
 
 .contacts-splash-section {
@@ -15,7 +15,7 @@
   overflow: hidden;
   max-height: 100%;
   img {
-    width: 140%;
+    width: 130%;
     object-fit: cover;
   }
 }
@@ -52,6 +52,23 @@
   }
 }
 
+.contacts-spacer-container {
+  display: flex;
+  height: 5em;
+  width: 100%;
+  border-bottom: solid 1px $black;
+}
+
+.contacts-spacer-left {
+  flex: 3;
+  border-right: solid 1px $black;
+  padding: 2em;
+}
+.contacts-spacer-right {
+  flex: 1;
+  padding: 2em;
+}
+
 @media (max-width: 950px) {
   .contacts-main {
     flex-direction: column;
@@ -61,5 +78,8 @@
     align-items: center;
     justify-content: space-around;
     text-align: left;
+  }
+  .contacts-spacer-container {
+    display: none;
   }
 }
