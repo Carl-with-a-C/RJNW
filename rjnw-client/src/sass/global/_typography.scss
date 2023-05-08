@@ -52,6 +52,7 @@ p {
   line-height: 1;
 }
 
+.services-nav-link-text,
 .nav-link-text {
   font-family: var(--ff-para);
   font-size: var(--fs-16);
@@ -59,6 +60,9 @@ p {
   a {
     text-decoration: none;
     color: $black;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 

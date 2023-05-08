@@ -11,12 +11,12 @@
   padding: 2em;
   max-height: 66.4vh;
   overflow: hidden;
+  position: relative;
 }
 
 .projects-splash-img-container {
-  display: flex;
-  max-height: calc(66.4vh);
   max-width: 100%;
+  max-height: calc(66.4vh - 4em);
   overflow: hidden;
   img {
     object-fit: cover;
@@ -29,6 +29,13 @@
       object-position: 50% 50%;
       width: 100%;
       height: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    img {
+      aspect-ratio: 1/2;
+      object-position: bottom;
     }
   }
 }
@@ -76,7 +83,8 @@
   .projects-header-container {
     border-bottom: solid 1px $black;
   }
-  .projects-spacer-container {
+  .projects-spacer-left,
+  .projects-spacer-right {
     display: none;
   }
 }

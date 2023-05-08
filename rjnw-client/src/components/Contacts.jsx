@@ -15,8 +15,16 @@ const Contacts = () => {
         <div className="contacts-info-section">
           <h2>Get in touch</h2>
           <div className="contacts-details">
-            <h4>hello@rjnw.com</h4>
-            <h4>0800 800 800</h4>
+            <a
+              className="contacts-details-link"
+              href="mailto:info@roofingandjoinery.com"
+              target="blank"
+            >
+              <p>info@roofingandjoinery.com</p>
+            </a>
+            <a className="contacts-details-link" href="tel:0800800800">
+              <h4>0800 800 800</h4>
+            </a>
           </div>
         </div>
       </section>

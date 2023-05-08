@@ -31,11 +31,15 @@
   text-align: center;
 }
 
+.contacts-details-link {
+  text-decoration: none;
+  color: $white;
+}
+
 .contacts-details {
   padding: 2em 0;
-  h4 {
+  p {
     line-height: 1;
-    letter-spacing: 5px;
   }
 }
 

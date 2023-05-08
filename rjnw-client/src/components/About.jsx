@@ -7,22 +7,30 @@ const About = () => {
         <div className="about-upper-section">
           <div className="about-heading-section">
             <div className="about-heading">
-              <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+              <h2>
+                {" "}
+                A home improvement experience that will exceed your
+                expectations.
+              </h2>
             </div>
             <div className="about-heading-space"></div>
           </div>
           <div className="about-blurb-section">
             <div className="about-blurb about-blurb-1">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our expert tradespeople are trained and experienced, and we
+                always put our clients' needs first. We strive for customer
+                satisfaction, and our clients rate us highly for our quality
+                workmanship.
               </p>
             </div>
             <div className="about-blurb about-blurb-2">
               <p>
-                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut.
+                By working with Roofing and Joinery Northwest Ltd, you will
+                benefit from our years of experience and expertise in the
+                industry. We pride ourselves on our attention to detail and will
+                work with you to ensure that your project is completed on time
+                and within budget.
               </p>
             </div>
           </div>

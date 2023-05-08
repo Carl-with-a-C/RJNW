@@ -5,11 +5,10 @@ const Services = () => {
     <div id="services">
       <section className="services-main">
         <div className="services-sideinfo-container">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+          <h2>ROOFIMG AND JOINERY SPECIALISTS</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean
-            vel elit sc
+            We provide free expert advice and will help you to find the best
+            solutions for you and your property.
           </p>
         </div>
         <div className="services-services-container">

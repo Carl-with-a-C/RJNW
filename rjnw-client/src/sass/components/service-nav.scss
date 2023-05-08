@@ -4,7 +4,10 @@
   align-items: center;
   justify-content: space-between;
   height: 5em;
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 1000;
 }
 
 .service-nav-logo-section {
@@ -47,8 +50,20 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
   .service-nav-logo-section {
     border: none;
+  }
+  .service-nav-links {
+    justify-content: space-around;
+  }
+  .service-nav-socials-section {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .service-nav-link-section {
+    display: none;
   }
 }

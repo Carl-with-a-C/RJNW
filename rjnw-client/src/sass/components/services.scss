@@ -92,6 +92,9 @@
     width: 125%;
     object-fit: cover;
   }
+  img:hover {
+    transform: scale(1.1);
+  }
   &::after {
     content: "";
     position: absolute;
@@ -130,6 +133,15 @@
 .services-spacer-right {
   flex: 1;
   padding: 2em;
+}
+
+.title {
+  h1 {
+    opacity: 0.25;
+    position: absolute;
+
+    font-size: 250px;
+  }
 }
 
 @media (max-width: 1250px) {

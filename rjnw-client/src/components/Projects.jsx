@@ -15,14 +15,14 @@ const Projects = () => {
         <div className="projects-info-container">
           <div className="projects-header-container">
             <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Committed to delivering exceptional service from start to finish.
             </h3>
           </div>
           <div className="projects-blurb-container">
             <p>
-              Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
+              Don't just take our word for it - our satisfied customers speak
+              for themselves. See what they have to say by checking out our
+              customer testimonials.
             </p>
           </div>
         </div>

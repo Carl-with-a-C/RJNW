@@ -18,15 +18,17 @@ const Landing = () => {
               </div>
             </div>
             <div className="upper-header-text">
-              <h4>MASTERS OF ROOFING, JOINERY AND CONVERSIONS</h4>
+              <h4>MASTER ROOFERS, 20 YEARS OF EXPERIENCE</h4>
+              <div className="upper-text-cover"></div>
             </div>
           </div>
           <div className="lower-header-container">
             <h1>ROOFING & JOINERY NORTHWEST. EXPERTISE BEYOND EXPECTATION</h1>
             <p>
-              Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
+              Roofing and Joinery Northwest Ltd is a leading provider of
+              roofing, joinery, facia and soffits services in the North West of
+              England, we pride ourselves on offering exceptional projects
+              throughout the region.
             </p>
           </div>
         </div>
@@ -53,7 +55,7 @@ const Landing = () => {
                   />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://images.unsplash.com/photo-1633544097071-ac8410bf9e20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+                  <img src="https://images.unsplash.com/photo-1511452885600-a3d2c9148a31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80" />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="https://images.pexels.com/photos/4947284/pexels-photo-4947284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
@@ -71,6 +73,8 @@ const Landing = () => {
             </a>
           </div>
         </div>
+        <div className="landing-reveal-block-left"></div>
+        <div className="landing-reveal-block-right"></div>
       </main>
       <div id="about" className="spacer-container">
         <div className="spacer-left"></div>

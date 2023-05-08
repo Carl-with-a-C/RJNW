@@ -1,10 +1,11 @@
-.conversion-main {
+.service-main {
   display: flex;
   height: 83vh;
   flex-direction: column;
+  position: relative;
 }
 
-.conversion-upper-section {
+.service-upper-section {
   display: flex;
   flex: 1;
   border-bottom: solid 1px $black;
@@ -12,19 +13,20 @@
   max-height: 16.6vh;
 }
 
-.conversion-upper-space {
+.service-upper-space {
   background-color: $fade-blue;
 }
 
-.conversion-lower-section {
+.service-lower-section {
   display: flex;
   flex: 4;
   border-bottom: solid 1px $black;
   position: relative;
   max-height: 66.4vh;
+  width: 100%;
 }
 
-.conversion-header-section {
+.service-header-section {
   flex: 3;
   display: flex;
   border-right: solid 1px $black;
@@ -32,10 +34,11 @@
   padding: 2em;
 }
 
-.conversion-header-container {
+.service-header-container {
   color: $blue;
 }
-.conversion-upper-space {
+
+.service-upper-space {
   flex: 1;
   display: flex;
   align-items: center;
@@ -48,38 +51,34 @@
   }
 }
 
-.conversion-carousel-section {
+.service-carousel-section {
   flex: 3;
   border-right: solid 1px $black;
   padding: 2em;
   position: relative;
   height: 100%;
+  width: 75vw;
 }
 
-.conversion-img-container {
+.service-img-container {
   position: relative;
   overflow: hidden;
-  max-height: 100%;
+  height: 100%;
+  max-width: 100%;
   img {
-    max-width: 120%;
+    width: 100%;
     object-fit: cover;
-  }
-  @media (max-width: 1250px) {
-    img {
-      object-fit: cover;
-      object-position: center;
-      max-width: 140%;
-    }
+    max-height: 100%;
   }
 }
 
-.conversion-info-section {
+.service-info-section {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.conversion-info-upper-section {
+.service-info-upper-section {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -99,7 +98,12 @@
   }
 }
 
-.conversion-info-lower-section {
+.call-btn-text {
+  text-decoration: none;
+  color: $blue;
+}
+
+.service-info-lower-section {
   flex: 1;
   padding: 2em;
   display: flex;
@@ -109,16 +113,29 @@
 }
 
 @media (max-width: 950px) {
-  .conversion-upper-space {
+  .service-upper-space {
     display: none;
   }
-  .conversion-lower-section {
+  .service-lower-section {
     flex-direction: column;
     border: none;
   }
-  .conversion-info-upper-section {
+  .service-info-upper-section {
     button {
       display: block;
     }
+  }
+  .service-carousel-section {
+    width: 100%;
+  }
+}
+
+.service-btn {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  &:hover {
+    background-color: $white;
+    color: $blue;
+    border: solid 1px $blue;
   }
 }
