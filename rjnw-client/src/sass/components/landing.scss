@@ -82,12 +82,11 @@
 }
 
 .lower-header-container {
-  flex: 1.5;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2em;
-  max-height: 55.1vh;
+  min-height: 55.1vh;
   overflow: hidden;
   p {
     width: 75%;
@@ -96,6 +95,11 @@
   }
   h1 {
     transform: translateX(100%);
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 30px;
+    }
   }
 }
 

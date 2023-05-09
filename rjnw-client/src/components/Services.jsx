@@ -5,7 +5,7 @@ const Services = () => {
     <div id="services">
       <section className="services-main">
         <div className="services-sideinfo-container">
-          <h2>ROOFIMG AND JOINERY SPECIALISTS</h2>
+          <h2>ROOFING AND JOINERY SPECIALISTS</h2>
           <p>
             We provide free expert advice and will help you to find the best
             solutions for you and your property.
