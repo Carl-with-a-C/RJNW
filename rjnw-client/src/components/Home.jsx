@@ -5,10 +5,10 @@ import Projects from "./Projects";
 import Services from "./Services";
 import Contacts from "./Contacts";
 
-const Home = () => {
+const Home = ({ navOpen, setNavOpen }) => {
   return (
     <div>
-      <Nav />
+      <Nav navOpen={navOpen} setNavOpen={setNavOpen} />
       <Landing />
       <About />
       <Projects />

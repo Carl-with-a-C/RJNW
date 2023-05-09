@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination } from "swiper";
@@ -49,19 +49,16 @@ const Landing = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img
-                    src="https://images.pexels.com/photos/7082446/pexels-photo-7082446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
-                  />
+                  <img src="https://images.unsplash.com/photo-1571513117173-8cdb322b553b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://images.unsplash.com/photo-1511452885600-a3d2c9148a31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80" />
+                  <img src="https://images.unsplash.com/photo-1469964062538-06fad433a132?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://images.pexels.com/photos/4947284/pexels-photo-4947284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                  <img src="https://images.unsplash.com/photo-1577920231835-c232d76c4662?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://static.wixstatic.com/media/11062b_7dcce54a95fe450290996d862e60cbf4~mv2.jpg/v1/fill/w_640,h_1034,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7dcce54a95fe450290996d862e60cbf4~mv2.jpg" />
+                  <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
                 </SwiperSlide>
               </Swiper>
             </div>

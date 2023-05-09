@@ -2,10 +2,12 @@ import facebook from "../icons/FB-blue.svg";
 import twitter from "../icons/TW-blue.svg";
 import insta from "../icons/INS-blue.svg";
 
-import { useState } from "react";
-
-const Nav = () => {
-  const [navOpen, setNavOpen] = useState(false);
+const Nav = ({ navOpen, setNavOpen }) => {
+  let navLinkAnimate = {
+    transform: navOpen ? "translateY(-50px)" : "translateY(0)",
+    transition: "1s",
+    transitionDelay: navOpen ? "0.7s" : "0s",
+  };
 
   return (
     <nav className="navbar">
@@ -69,8 +71,8 @@ const Nav = () => {
           className="overlay-links-container"
           style={{
             transform: navOpen ? "scale(1)" : "scale(0)",
-            transition: "1s",
-            transitionDelay: navOpen ? "1s" : "0s",
+            transition: "0.3s",
+            transitionDelay: navOpen ? "0.5s" : "0.2s",
             opacity: navOpen ? "1" : "0",
           }}
         >
@@ -82,7 +84,7 @@ const Nav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>home</h1>
+                <h1 style={navLinkAnimate}>home</h1>
               </a>
             </li>
             <li className="overlay-link">
@@ -92,7 +94,7 @@ const Nav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>about</h1>
+                <h1 style={navLinkAnimate}>about</h1>
               </a>
             </li>
             <li className="overlay-link">
@@ -102,7 +104,7 @@ const Nav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>projects</h1>
+                <h1 style={navLinkAnimate}>projects</h1>
               </a>
             </li>
             <li className="overlay-link">
@@ -112,7 +114,7 @@ const Nav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>services</h1>
+                <h1 style={navLinkAnimate}>services</h1>
               </a>
             </li>
             <li className="overlay-link">
@@ -122,7 +124,7 @@ const Nav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>contact</h1>
+                <h1 style={navLinkAnimate}>contact</h1>
               </a>
             </li>
           </ul>

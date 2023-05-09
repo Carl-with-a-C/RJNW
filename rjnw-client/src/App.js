@@ -7,12 +7,15 @@ import Facia from "./components/Facia";
 import ReRoof from "./components/ReRoof";
 import Conversions from "./components/Conversions";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
+  const [navOpen, setNavOpen] = useState(false);
+
+  //landing animation
   useEffect(() => {
-    const tl = gsap.timeline({ repeatRefresh: true });
+    const tl = gsap.timeline();
     let smx = gsap.context(() => {
       tl.to(".landing-reveal-block-left", 2, {
         translateX: "-100%",
@@ -98,17 +101,48 @@ function App() {
             opacity: 1,
           },
           "-=0.7"
+        )
+        .to(
+          ".landing-reveal-block-right, .landing-reveal-block-leftt",
+          0,
+          {
+            display: "none",
+          },
+          "-=2"
         );
+
       return () => {
         smx.revert();
       };
     });
   });
 
+  //nav-menu animation
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
+  //   let smx = gsap.context(() => {
+  //     if (navOpen) {
+  //       tl.to(".overlay-link > a > h1", {
+  //         translateY: "-100%",
+  //         ease: "power1.in",
+
+  //       });
+
+  //       return () => {
+  //         smx.revert();
+  //       };
+  //     }
+  //   });
+  // });
+
   return (
     <div id="smooth-content" className="App">
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route
+          index
+          path="/"
+          element={<Home navOpen={navOpen} setNavOpen={setNavOpen} />}
+        />
         <Route path="facias" element={<Facia />} />
         <Route path="re-roof" element={<ReRoof />} />
         <Route path="conversions" element={<Conversions />} />
