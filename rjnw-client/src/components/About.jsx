@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-upper-section">
           <div className="about-heading-section">
             <div className="about-heading">
-              <h2> Home improvement to exceed your expectations.</h2>
+              <h2> Home improvement that will exceed your expectations.</h2>
             </div>
             <div className="about-heading-space"></div>
           </div>

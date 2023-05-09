@@ -18,6 +18,7 @@
   max-width: 100%;
   max-height: calc(66.4vh - 4em);
   overflow: hidden;
+  text-align: center;
   img {
     object-fit: cover;
     width: 100%;
@@ -36,6 +37,49 @@
     img {
       aspect-ratio: 1/2;
       object-position: bottom;
+    }
+  }
+}
+
+.testimonial-container {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(12, 98, 199, 0.5) 100%
+  );
+  width: calc(100% - 4em);
+  height: calc(100% - 4em);
+  padding: 2em;
+  h4 {
+    color: $white;
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.testimony {
+  p {
+    color: $black;
+    font-weight: bold;
+  }
+  margin-top: 4em;
+  margin-bottom: auto;
+  @media (max-width: 500px) {
+    margin-top: 1em;
+    font-size: 30px;
+  }
+  @media (max-height: 800px) {
+    margin-top: 1em;
+    h1 {
+      font-size: 30px;
     }
   }
 }
