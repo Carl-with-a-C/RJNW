@@ -3,7 +3,7 @@ import twitter from "../icons/TW-blue.svg";
 import insta from "../icons/INS-blue.svg";
 
 const Nav = ({ navOpen, setNavOpen }) => {
-  let navLinkAnimate = {
+  const navLinkAnimate = {
     transform: navOpen ? "translateY(-50px)" : "translateY(0)",
     transition: "1s",
     transitionDelay: navOpen ? "0.7s" : "0s",
@@ -25,7 +25,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
             <a href="#about">about</a>
           </li>
           <li className="nav-link-text">
-            <a href="#projects">projects</a>
+            <a href="#projects">testimonies</a>
           </li>
           <li className="nav-link-text">
             <a href="#services">services</a>
@@ -55,9 +55,9 @@ const Nav = ({ navOpen, setNavOpen }) => {
         </ul>
       </div>
       <div className="nav-toggle" onClick={() => setNavOpen(!navOpen)}>
-        <span className={navOpen ? "bar top-bar" : "bar"}></span>
-        <span className={navOpen ? "bar mid-bar" : "bar"}></span>
-        <span className={navOpen ? "bar bottom-bar" : "bar"}></span>
+        <span className="bar" id={navOpen ? "top-bar" : null}></span>
+        <span className="bar" id={navOpen ? "mid-bar" : null}></span>
+        <span className="bar" id={navOpen ? "low-bar" : null}></span>
       </div>
 
       <div
@@ -104,7 +104,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1 style={navLinkAnimate}>projects</h1>
+                <h1 style={navLinkAnimate}>testimonies</h1>
               </a>
             </li>
             <li className="overlay-link">

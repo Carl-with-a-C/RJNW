@@ -108,7 +108,7 @@ function App() {
           {
             display: "none",
           },
-          "-=2"
+          "-=1.5"
         );
 
       return () => {
@@ -116,24 +116,6 @@ function App() {
       };
     });
   });
-
-  //nav-menu animation
-  // useEffect(() => {
-  //   const tl = gsap.timeline();
-  //   let smx = gsap.context(() => {
-  //     if (navOpen) {
-  //       tl.to(".overlay-link > a > h1", {
-  //         translateY: "-100%",
-  //         ease: "power1.in",
-
-  //       });
-
-  //       return () => {
-  //         smx.revert();
-  //       };
-  //     }
-  //   });
-  // });
 
   return (
     <div id="smooth-content" className="App">

@@ -8,6 +8,12 @@ import { useState } from "react";
 const ServiceNav = () => {
   const [navOpen, setNavOpen] = useState(false);
 
+  let navLinkAnimate = {
+    transform: navOpen ? "translateY(-50px)" : "translateY(0)",
+    transition: "1s",
+    transitionDelay: navOpen ? "0.7s" : "0s",
+  };
+
   return (
     <nav className="service-navbar">
       <div className="service-nav-logo-section">
@@ -55,9 +61,9 @@ const ServiceNav = () => {
         </ul>
       </div>
       <div className="nav-toggle" onClick={() => setNavOpen(!navOpen)}>
-        <span className={navOpen ? "bar top-bar" : "bar"}></span>
-        <span className={navOpen ? "bar mid-bar" : "bar"}></span>
-        <span className={navOpen ? "bar bottom-bar" : "bar"}></span>
+        <span className="bar" id={navOpen ? "top-bar" : null}></span>
+        <span className="bar" id={navOpen ? "mid-bar" : null}></span>
+        <span className="bar" id={navOpen ? "low-bar" : null}></span>
       </div>
 
       <div
@@ -71,8 +77,8 @@ const ServiceNav = () => {
           className="overlay-links-container"
           style={{
             transform: navOpen ? "scale(1)" : "scale(0)",
-            transition: "1s",
-            transitionDelay: navOpen ? "1s" : "0s",
+            transition: "0.3s",
+            transitionDelay: navOpen ? "0.5s" : "0s",
             opacity: navOpen ? "1" : "0",
           }}
         >
@@ -85,7 +91,7 @@ const ServiceNav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>home</h1>
+                <h1 style={navLinkAnimate}>home</h1>
               </Link>
             </li>
             <li className="overlay-link">
@@ -95,7 +101,7 @@ const ServiceNav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>facias</h1>
+                <h1 style={navLinkAnimate}>facias</h1>
               </Link>
             </li>
             <li className="overlay-link">
@@ -105,7 +111,7 @@ const ServiceNav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>re-roof</h1>
+                <h1 style={navLinkAnimate}>re-roof</h1>
               </Link>
             </li>
             <li className="overlay-link">
@@ -115,7 +121,7 @@ const ServiceNav = () => {
                   setNavOpen(!navOpen);
                 }}
               >
-                <h1>conversions</h1>
+                <h1 style={navLinkAnimate}>conversions</h1>
               </Link>
             </li>
           </ul>

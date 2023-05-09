@@ -56,7 +56,7 @@ const Landing = () => {
                   <img src="https://images.unsplash.com/photo-1577920231835-c232d76c4662?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                  <img src="https://lh3.googleusercontent.com/poktdfyggkN8yslZe66rneqcgvh00ROQp1yU4hOBSW7G5EZrQvgNwWHXlMBGko-R2lO0n96KgXG7P5-dDIlK_GAbFXHYNtMEl-xJtnhIn0K_SOxjDXHnm33KCUaA=w1536-rw-v1-e365" />
                 </SwiperSlide>
               </Swiper>
             </div>
